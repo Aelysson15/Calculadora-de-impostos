@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head id="head1"><meta charset="utf-8" />
+    <title>
+        Unifacisa - Calculadora de Impostos PIS, COFINS, C.SOCIAL, ISS, IRPJ
+    </title>
+
+    <!-- css -->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/bootstrap/css/todc-bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/page.css" rel="stylesheet" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/html5shiv.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <section class="container" id="main-content">
+        <div class="row">
+            <div class="span8">
+
+                <div class="box_magico">
+                    <h1>
+                        UNIFACISA - Calculadora de Impostos Online PIS, COFINS, C.SOCIAL, ISS, IRPJ
+                    </h1>
+                    <p>
+                        Calcular valores para emissão de notas fiscais.
+                        <br />
+                        Indicado para calculo da retenção de impostos de empresas prestadoras de serviços
+                        por Lucro Presumido.
+                    </p>
+                    <div class="content">
+                        <h2>
+                            Retenções de Impostos
+                        </h2>
+                        <fieldset>
+                            <table border="0" class="table-condensed">
+                                <tr>
+                                    <td colspan="5">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        VAL. NOTA&nbsp;
+                                    </td>
+                                    <td colspan="4">
+                                        <input name="txtValorBruto" type="text" value="10.000,00" maxlength="12" id="txtValorBruto" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        PIS&nbsp;
+                                    </td>
+                                    <td>
+                                        <input name="txtPIS" type="text" value="0,65" id="txtPIS" style="width: 50px;" />
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        COFINS&nbsp;
+                                    </td>
+                                    <td>
+                                        <input name="txtCofins" type="text" value="3" id="txtCofins" style="width: 50px;" />
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        C.SOCIAL&nbsp;
+                                    </td>
+                                    <td>
+                                        <input name="txtCSocial" type="text" value="1" id="txtCSocial" style="width: 50px;" />
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        SUB TOTAL&nbsp;
+                                    </td>
+                                    <td>
+                                        <span id="lblSubTotalPercent" style="color: Green; font-weight: bold;">4,65</span>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                        Retenção
+                                    </td>
+                                    <td>
+                                        <span id="lblTotalGrupo" style="color: #3F51B5; font-weight: bold;">R$ 465,00</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        ISS&nbsp;
+                                    </td>
+                                    <td>
+                                        <input name="txtISS" type="text" value="5" id="txtISS" style="width: 50px;" />
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                        Retenção
+                                    </td>
+                                    <td>
+                                        <span id="lblValorISS" style="color: #3F51B5; font-weight: bold;">R$ 500,00</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        IRRF&nbsp;
+                                    </td>
+                                    <td v>
+                                        <input name="txtIRRF" type="text" value="1,5" id="txtIRRF" style="width: 50px;" />
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                        Retenção
+                                    </td>
+                                    <td>
+                                        <span id="lblValorIRRF" style="color: #3F51B5; font-weight: bold;">R$ 150,00</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        TOTAIS&nbsp;
+                                    </td>
+                                    <td>
+                                        <span id="lblTotalPercent" style="color: Green; font-weight: bold;">11,15</span>
+                                    </td>
+                                    <td>
+                                        <span id="lblTotal" style="color: #3F51B5; font-weight: bold;">R$ 1.115,00</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </div>
+                    <br />
+                    <p>
+                        Antes de utilizar a ferramenta, procure o auxílio de um contador.<br />
+                        <br />
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer-content">
+        <div class="container">
+            <section style="text-align: center;" itemscope style="width: 226px; float: left; margin-right: 10px;">
+                <h6 class="tituloCabecalho">
+                    By:</h6>
+                <p>
+                    jose.aelysson@unifacisa.edu.br
+                </p>
+            </section>
+        </div>
+    </footer>
+
+    <script src="assets/bootstrap/js/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="assets/jquery.plugins/jquery.maskMoney.js" type="text/javascript"></script>
+    <script src="assets/forms/calcula-nota-fiscal.aspx.js" type="text/javascript"></script>
+</body>
+</html>
